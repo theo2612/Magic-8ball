@@ -1,3 +1,4 @@
+from getopt import gnu_getopt
 import random
 #name = "Brad"
 name = input("What is your name? ")
@@ -29,5 +30,14 @@ elif random_number == 10:
 else:
   answer = "Error"
 
-print(name + " asks: " + question)
-print("Magic 8-Ball's answer: " + answer)
+
+if name == "":
+  print("Magic 8-Ball's answer: " + answer)
+elif question == "":
+  print("Without a question the very fabric of reality it at risk")
+else:
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
+
+  
+  
